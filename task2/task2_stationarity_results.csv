@@ -1,0 +1,25 @@
+Test,Series,Statistic,p-value,Lags used,Obs,1% CV,5% CV,Stationary?
+ADF,trip_count | Raw,-3.7713,0.0032,22,1042,-3.437,-2.864,YES ✓
+KPSS,trip_count | Raw,2.6515,0.01,16,1065,0.739,0.463,NO ✗
+ADF,trip_count | First diff (d=1),-9.6593,0.0,21,1042,-3.437,-2.864,YES ✓
+KPSS,trip_count | First diff (d=1),0.0744,0.1,70,1064,0.739,0.463,YES ✓
+ADF,"trip_count | Seas diff (D=1,s=7)",-8.47,0.0,21,1036,-3.437,-2.864,YES ✓
+KPSS,"trip_count | Seas diff (D=1,s=7)",0.0269,0.1,15,1058,0.739,0.463,YES ✓
+ADF,"trip_count | Full diff (d=1,D=1)",-13.6383,0.0,20,1036,-3.437,-2.864,YES ✓
+KPSS,"trip_count | Full diff (d=1,D=1)",0.0064,0.1,12,1057,0.739,0.463,YES ✓
+ADF,avg_fare | Raw,-3.0937,0.027,22,1042,-3.437,-2.864,YES ✓
+KPSS,avg_fare | Raw,0.2807,0.1,18,1065,0.739,0.463,YES ✓
+ADF,avg_fare | First diff (d=1),-9.442,0.0,21,1042,-3.437,-2.864,YES ✓
+KPSS,avg_fare | First diff (d=1),0.0675,0.1,13,1064,0.739,0.463,YES ✓
+ADF,"avg_fare | Seas diff (D=1,s=7)",-7.4315,0.0,21,1036,-3.437,-2.864,YES ✓
+KPSS,"avg_fare | Seas diff (D=1,s=7)",0.0277,0.1,12,1058,0.739,0.463,YES ✓
+ADF,"avg_fare | Full diff (d=1,D=1)",-13.7484,0.0,22,1034,-3.437,-2.864,YES ✓
+KPSS,"avg_fare | Full diff (d=1,D=1)",0.0396,0.1,38,1057,0.739,0.463,YES ✓
+ADF,total_revenue | Raw,-3.7081,0.004,22,1042,-3.437,-2.864,YES ✓
+KPSS,total_revenue | Raw,2.3384,0.01,17,1065,0.739,0.463,NO ✗
+ADF,total_revenue | First diff (d=1),-9.7685,0.0,21,1042,-3.437,-2.864,YES ✓
+KPSS,total_revenue | First diff (d=1),0.0437,0.1,64,1064,0.739,0.463,YES ✓
+ADF,"total_revenue | Seas diff (D=1,s=7)",-8.1197,0.0,21,1036,-3.437,-2.864,YES ✓
+KPSS,"total_revenue | Seas diff (D=1,s=7)",0.0298,0.1,15,1058,0.739,0.463,YES ✓
+ADF,"total_revenue | Full diff (d=1,D=1)",-13.887,0.0,20,1036,-3.437,-2.864,YES ✓
+KPSS,"total_revenue | Full diff (d=1,D=1)",0.0054,0.1,12,1057,0.739,0.463,YES ✓
